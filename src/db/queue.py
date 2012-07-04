@@ -34,7 +34,7 @@ def find(skip = 0, limit = 0, status = "uncompleted"):
     elif status == "completed" or status == "using":
         orders = queue.find({"status" : status}, skip = skip, limit = limit)
     else:
-        orders = queue.find(skip = skip, limit)
+        orders = queue.find(skip = skip, limit = limit)
         
     return orders
 
@@ -56,8 +56,8 @@ def insert_one(order):
         
 def init_db():
     if count() == 0:
-        order = {"author" : "Wu H", "topic" : "Complete chloroplast genome sequence of Magnolia kwangsiensis", "status" : "never"}
+        order = {"type" : "EI", "author" : "Hongzhi", "topic" : "Rectangular Tree Browser", "status" : "never"}
         print "Start initialize database."
-        for i in xrange(0, 1000):
+        for i in xrange(0, 100):
             queue.insert(order, manipulate = False)
         print "Finished initialize data to database."

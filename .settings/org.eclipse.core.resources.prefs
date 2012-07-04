@@ -1,4 +1,7 @@
-#Fri Jun 22 17:16:51 CST 2012
+#Thu Jun 28 03:13:17 CST 2012
 eclipse.preferences.version=1
 encoding//src/db/queue.py=utf-8
+encoding//src/pool/httpclient.py=utf-8
+encoding//src/pool/spider.py=utf-8
+encoding//src/snatch/EI.py=utf-8
 encoding//src/snatch/SCI.py=utf-8
